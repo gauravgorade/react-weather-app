@@ -1,4 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@font-face {
+  font-family: GD Sherpa;
+  src: url(./font/GD_Sherpa-RegularWeb.ttf);
+}
 
 @import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
 
@@ -6,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'GD Sherpa', sans-serif;
 }
 
 :root {
@@ -14,28 +18,28 @@
   --color-dark: #2f2f2f;
   --color-light: #fff;
   --color-brand: #57bd84;
-  --font-fam: "Lato", sans-serif;
+  --font-fam: 'GD Sherpa', sans-serif;
   --height: 5rem;
   --btn-width: 6rem;
   --bez: cubic-bezier(0, 0, 0.43, 1.49);
 }
 
 body {
-  background-color: #f5f5f5;
-  background: var(--color-dark);
+  background-color: #d1dcef;
   height: 100vh;
   min-height: 100vh;
   display: grid;
   place-items: center;
+ 
 }
 
 .widget {
   display: flex;
   height: 400px;
-  width: 650px;
+  width: 60rem;
   flex-wrap: wrap;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 1px;
   box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3),
     0 17px 17px 0 rgba(0, 0, 0, 0.15);
 }
@@ -67,6 +71,7 @@ body {
   display: flex;
   justify-content: space-around;
   margin-right: 20px;
+  padding: 0 10px;
 }
 .widget .weatherInfo .description {
   flex: 0 60%;
@@ -87,7 +92,7 @@ body {
 .widget .date {
   flex: 0 0 30%;
   height: 40%;
-  background: #70c1b3;
+  background: #00838c;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -161,7 +166,7 @@ body {
   width: 80px;
   height: 32px;
   border: none;
-  background: #048b9c;
+  background: #000000;
   text-align: center;
   color: #fff;
   border-radius: 0 5px 5px 0;
@@ -172,7 +177,7 @@ body {
 }
 
 .searchButton:hover {
-  background-color: #17b8ce;
+  background-color: #00838c;
 }
 
 .wrap {
@@ -183,11 +188,4 @@ body {
   margin-bottom: 50px;
 }
 
-/*Resize the wrap to see the search bar change!*/
-/* .wrap {
-  width: 30%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
+
