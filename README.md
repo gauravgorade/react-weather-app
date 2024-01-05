@@ -15,4 +15,4 @@ Discover a dynamic Single Page Application (SPA) built using React and integrate
 Contributions are welcome! Whether you're experienced or new, your input can improve this project. Feel free to open issues or submit pull requests.
 
 ## Contact
-For questions or feedback, reach out to me at agentjack2929@gmail.com.
+For questions or feedback, reach out to me at agentjack2929@gmail.com
